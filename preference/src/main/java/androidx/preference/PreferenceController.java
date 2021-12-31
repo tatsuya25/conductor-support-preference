@@ -35,10 +35,9 @@ import androidx.annotation.Nullable;
 import androidx.annotation.RestrictTo;
 import androidx.annotation.XmlRes;
 import androidx.fragment.app.Fragment;
-import androidx.preference.MultiSelectListPreference;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import com.bluelinelabs.conductor.RestoreViewOnCreateController;
+import com.bluelinelabs.conductor.Controller;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 
@@ -106,7 +105,7 @@ import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
  * @see PreferenceScreen
  */
 @SuppressWarnings({"WeakerAccess", "unused", "HandlerLeak", "JavaDoc", "RestrictedApi"})
-public abstract class PreferenceController extends RestoreViewOnCreateController implements
+public abstract class PreferenceController extends Controller implements
         PreferenceManager.OnDisplayPreferenceDialogListener,
         DialogPreference.TargetFragment {
 
